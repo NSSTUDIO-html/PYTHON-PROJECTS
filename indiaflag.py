@@ -1,0 +1,40 @@
+from turtle import *
+shape("turtle")
+speed(10)
+pensize(10)
+color("blue")
+def spen(x,y):
+	penup()
+	goto(x,y)
+	pendown()
+
+for _ in range(24):
+	forward(200)
+	back(200)
+	left(15)
+spen(0,-200)
+pensize(15)
+circle(200)
+
+spen(0,300)
+color("orange")
+fillcolor("orange")
+def orange():
+	begin_fill()
+	forward(400)
+	left(90)
+	forward(500)
+	left(90)
+	forward(1000)
+	left(90)
+	forward(500)
+	left(90)
+	forward(600)
+	end_fill()
+orange()
+
+spen(0,-800)
+color("green")
+fillcolor("green")
+orange()
+done()
